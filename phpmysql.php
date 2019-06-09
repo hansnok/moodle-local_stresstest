@@ -4,14 +4,14 @@ $initialtime = microtime(true);
 require_once(dirname(dirname(dirname(__FILE__))) . "/config.php");
 global $OUTPUT, $DB, $PAGE;
 
-$url = new moodle_url("/local/stresstest/php.php");
+$url = new moodle_url("/local/stresstest/phpmysql.php");
 $context = context_system::instance();
 $PAGE->set_url($url);
 $PAGE->set_context($context);
 $PAGE->set_context($context);
 $PAGE->set_pagelayout('standard');
-$PAGE->set_title('PHP TIME TEST');
-$PAGE->set_heading('PHP TIME TEST');
+$PAGE->set_title('PHP+MYSQL TIME TEST');
+$PAGE->set_heading('PHP+MYSQL TIME TEST');
 echo $OUTPUT->header();
 echo '<h3>Fecha de inicio '.date('d/m/Y H:i:s', time()).'</h3><br><br>';
 
